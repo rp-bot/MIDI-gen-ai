@@ -8,6 +8,11 @@ ipykernel = "*"
 numpy = "*"
 matplotlib = "*"
 appnope = "*"
+midiutil = "*"
+pandas = "*"
+music21 = "*"
+beautifulsoup4 = "*"
+gensim = "*"
 
 [dev-packages]
 black = "*"
