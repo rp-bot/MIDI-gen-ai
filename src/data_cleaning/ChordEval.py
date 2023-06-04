@@ -18,9 +18,12 @@ notes = (note, time)
             chords = []
             for elem in part.recurse():
                 if isinstance(elem, note.Note):
-                    notes.append((elem.pitch, elem.offset))
+                    notes.append(
+                        (elem.pitch, elem.offset, elem.volume.velocity))
                 elif isinstance(elem, chord.Chord):
-                    chords.append((elem.pitches, elem.offset))
+                    for element in elem:
+                        chords.append(element.pitch, element.offset,
+                                      element.volume.velocity)
 
             temp_dict[i] = {
                 "notes": notes, "chords": chords}

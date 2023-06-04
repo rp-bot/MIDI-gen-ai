@@ -19,6 +19,7 @@ class MakeMIDI:
         # Check each part for chords
             for part in self.midi_obj.parts:
                 if any(isinstance(elem, chord.Chord) for elem in part.recurse()):
+
                     tracks_with_chords.insert(0, part)
 
             return tracks_with_chords
