@@ -13,6 +13,7 @@ pandas = "*"
 music21 = "*"
 beautifulsoup4 = "*"
 gensim = "*"
+pymilvus = "*"
 
 [dev-packages]
 black = "*"

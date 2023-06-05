@@ -6,4 +6,5 @@ parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
 
-TEST_DATA_DIR = os.path.join('Ultimate-MIDI-Scraper', 'data', 'test_data')
+MIDI_DATA_DIR = os.path.join(parentdir,
+                             'Ultimate-MIDI-Scraper', 'data', 'MIDIdata')
