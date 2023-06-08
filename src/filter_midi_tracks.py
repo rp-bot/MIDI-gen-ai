@@ -23,7 +23,7 @@ def filter_chords(midi_data):
     for i, part in enumerate(midi_data.parts):
         chords_array = []
         for element in part.recurse():
-            if isinstance(element, chord.Chord):
+            if isinstance(element, chord.Chord): # channel 10
                 chord_array = []
                 for i, n in enumerate(element):
                     chord_array.append(n)
@@ -59,9 +59,11 @@ def write_midi_files(midi_data):
 
 if __name__ == "__main__":
     midi_files = get_file_paths()
-    midi_objects = Open.open_midi_files(midi_files)
+    # midi_objects = Open.open_midi_files(midi_files)
+    # print(midi_files[-1])
+    midi_object = Open.open_midi(midi_files[-1])
 
-    filtered_midi_dict = filter_chords(midi_objects[0])
+    filtered_midi_dict = filter_chords(midi_object[0])
 
     # write_midi_files(filtered_midi_dict)
 

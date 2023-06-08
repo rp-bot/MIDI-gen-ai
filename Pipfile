@@ -15,6 +15,9 @@ beautifulsoup4 = "*"
 gensim = "*"
 pymilvus = "*"
 tqdm = "*"
+miditoolkit = "*"
+chorder = "*"
+mido = "*"
 
 [dev-packages]
 black = "*"
