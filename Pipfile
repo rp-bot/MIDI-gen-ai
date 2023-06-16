@@ -18,6 +18,7 @@ tqdm = "*"
 miditoolkit = "*"
 chorder = "*"
 mido = "*"
+tensorflow = "*"
 
 [dev-packages]
 black = "*"
