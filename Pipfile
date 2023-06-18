@@ -19,6 +19,7 @@ miditoolkit = "*"
 chorder = "*"
 mido = "*"
 tensorflow = "*"
+torch = "*"
 
 [dev-packages]
 black = "*"
