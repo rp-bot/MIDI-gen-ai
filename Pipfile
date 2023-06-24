@@ -20,6 +20,7 @@ chorder = "*"
 mido = "*"
 tensorflow = "*"
 torch = "*"
+graphviz = "*"
 
 [dev-packages]
 black = "*"
