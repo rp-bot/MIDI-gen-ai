@@ -21,6 +21,7 @@ mido = "*"
 tensorflow = "*"
 torch = "*"
 graphviz = "*"
+fastparquet = "*"
 
 [dev-packages]
 black = "*"
