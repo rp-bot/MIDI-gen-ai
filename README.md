@@ -1,4 +1,4 @@
-# MIDI Generative AI
+# AI MIDI Chords Generator
 
 This is a Generative Model that predicts the next few chords based on a given initial chord
 
