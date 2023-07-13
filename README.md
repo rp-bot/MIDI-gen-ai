@@ -2,6 +2,13 @@
 
 This is a Generative Model that predicts the next few chords based on a given initial chord
 
+# Google Colab
+
+The code for this Chord Prediction transformer model is available here
+
+-   ([Pre-Trained Model ](https://colab.research.google.com/drive/1ffQt5xyuNoEr9Qf7pkTAkUNTlOrTsRrQ?usp=sharing)) If you want to play around with the already trained model
+-   ([Model code](https://colab.research.google.com/drive/1dwB3Bz1uY49B0ljRjU6Gu6cGzWtUMqMQ?usp=sharing)) If you want to see what the code looks like
+
 # `Dev` Installation
 
 1. Clone this repo
