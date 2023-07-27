@@ -23,6 +23,7 @@ torch = "*"
 graphviz = "*"
 fastparquet = "*"
 pyarrow = "*"
+python-rtmidi = "*"
 
 [dev-packages]
 black = "*"

@@ -121,7 +121,9 @@ if __name__ == '__main__':
     genre = "rock"
 
     primer_vocab = create_primer_vocab(SAMPLE_MIDI_FILE, genre)
+
     primer = [stoi[midi_word] for midi_word in primer_vocab]
+    
     context = torch.tensor([primer], dtype=torch.long, device=device)
 
     chord_progression_length = 50
@@ -130,7 +132,6 @@ if __name__ == '__main__':
     context, chord_progression_length, p_amount)
     gen_list = generated_out1[0].cpu().detach().numpy().tolist()
 
-    sjdh = [itolabels[i] for i in gen_list]
     chords_out = filter_data_and_organize(gen_list)
     
     create_midi_file(chords_out, "sample1")
