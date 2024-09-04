@@ -2,6 +2,8 @@
 
 This is a Generative Model that predicts the next few chords based on a given initial chord
 
+![](Images/attention_map_2000_iters.png)
+
 # Google Colab
 
 The code for this Chord Prediction transformer model is available here
